@@ -1,15 +1,20 @@
 {
-  "name": "tawk",
+  "name": "for-signup-widget",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Fertility Outreach Signup Widget",
+  "source": "src/index.html",
   "scripts": {
-    "serve": "cp -R src/assets dist/assets && parcel serve src/index.html"
+    "serve": "parcel serve src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.9.2"
+  },
+  "dependencies": {
+    "@parcel/plugin": "^2.9.3",
+    "yup": "^0.32.9"
   }
 }
