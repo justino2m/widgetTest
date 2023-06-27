@@ -40,4 +40,4 @@ jobs:
           aws-region: "us-east-1" # replace with your preferred region
 
       - name: Upload to S3
-        run: aws s3 cp dist/widget.js s3://${{ secrets.AWS_S3_BUCKET }}/widget.js --acl public-read
+        run: aws s3 cp dist/widget.js s3://${{ secrets.AWS_S3_BUCKET }}/widget.js
