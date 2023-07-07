@@ -28,6 +28,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          SIGNUP_URL: ${{ secrets.SIGNUP_URL }}
 
       - name: Rename
         run: mv dist/main.*.js dist/widget.js
